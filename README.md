@@ -38,6 +38,7 @@ The provided code includes the following functionalities:
 - **Language Separation:** The `language_separator()` function separates text into Russian and English parts based on language detection.
 - **Text Tokenization:** Use the `tokenize_text()` function to tokenize text into words, considering the language.
 - **Stopwords Removal:** The `remove_stopwords()` function removes stopwords from a list of tokens, based on the language.
+- **Lemmatization:** The `lemmatize_text()` function to lemmatize text, which means reducing words to their base or dictionary form. 
 
 
 ## Example Usage
