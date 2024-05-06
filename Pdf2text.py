@@ -6,6 +6,8 @@ from langdetect import detect
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+import pymorphy2
 
 nltk.download('punkt')
 nltk.download('stopwords')
@@ -68,3 +70,12 @@ def tokenize_text(text, language):
 def remove_stopwords(tokens, language):
     stopwords_list = stopwords.words(language)
     return [token for token in tokens if token not in stopwords_list]
+
+def lemmatize_text(text, language):
+    if language == 'russian':
+        lemmatizer = pymorphy2.MorphAnalyzer()
+        tokens = [lemmatizer.parse(token)[0].normal_form for token in text]   
+    elif language == 'english':
+        lemmatizer = WordNetLemmatizer()
+        tokens = [lemmatizer.lemmatize(token) for token in text]
+    return tokens
