@@ -1,6 +1,6 @@
 # NLP Test Task
 
-This repository contains code for a PDF converter with simple tokenization, developed as a test task for industrial immersion at Gaspromneft.
+This repository contains code for a PDF converter with simple tokenization `Pdf2text.py`, developed for solve a test task for industrial immersion at Gaspromneft.
 
 ## Installation
 
@@ -42,7 +42,7 @@ The provided code includes the following functionalities:
 
 ## Example Usage
 
-For an example usage of the provided functionalities, please refer to the accompanying Jupyter Notebook file: [example_usage.ipynb](example_usage.ipynb).
+For an example usage of the provided functionalities, please refer to the accompanying Jupyter Notebook file: [example_usage.ipynb](https://github.com/RattametB/NLP_test_task/blob/main/Example_of_usage.ipynb).
 
 In the Jupyter Notebook, you can see how to use the functions for text extraction, cleaning, language detection, separation, tokenization, and stopwords removal on a sample PDF document.
 
